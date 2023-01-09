@@ -11,7 +11,9 @@
     "start": "next start",
     "stylelint": "stylelint '**/*.scss'",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "typed-scss": "typed-scss-modules pages",
+    "typed-scss:watch": "typed-scss-modules pages --watch"
   },
   "dependencies": {
     "@next/font": "^13.1.1",

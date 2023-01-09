@@ -73,32 +73,6 @@ exports[`renders homepage unchanged 1`] = `
         </a>
       </div>
     </main>
-    <footer
-      class="footer"
-    >
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Powered by
-         
-        <span
-          class="logo"
-        >
-          <img
-            alt="Vercel Logo"
-            data-nimg="1"
-            decoding="async"
-            height="16"
-            loading="lazy"
-            src="/vercel.svg"
-            style="color: transparent;"
-            width="72"
-          />
-        </span>
-      </a>
-    </footer>
   </div>
 </div>
 `;

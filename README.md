@@ -4,8 +4,8 @@
 
 - Next.js
 - Typescript
-- SCSS with modules
 - Jest with React Testing Library
+- SCSS with modules, including `typed-scss-modules` support
 - ESLint and Stylelint
 - Prettier
 
