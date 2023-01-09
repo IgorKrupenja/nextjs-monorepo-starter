@@ -8,7 +8,6 @@
 - Jest with React Testing Library
 - ESLint and Stylelint
 - Prettier
--
 
 ## How to Use
 
