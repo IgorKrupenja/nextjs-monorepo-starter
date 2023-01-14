@@ -21,7 +21,7 @@
       },
       "rules": {
         "no-unused-vars": "off",
-        // Note: you must disable the base rule as it can report incorrect errors
+        // Disabling the base rule as it can report incorrect errors
         "require-await": "off",
         "@typescript-eslint/require-await": "error",
         "unused-imports/no-unused-imports": "error",
