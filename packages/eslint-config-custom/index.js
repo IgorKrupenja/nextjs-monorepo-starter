@@ -1,3 +1,6 @@
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 module.exports = {
   extends: ['eslint:recommended', 'next'],
   plugins: ['prettier', 'simple-import-sort', 'testing-library', 'unused-imports'],
@@ -33,6 +36,14 @@ module.exports = {
             argsIgnorePattern: '^_',
           },
         ],
+      },
+    },
+    {
+      // Prevent ESLint from giving errors on JS config files
+      files: ['*.js'],
+      parser: 'espree',
+      parserOptions: {
+        ecmaVersion: 2020,
       },
     },
   ],
