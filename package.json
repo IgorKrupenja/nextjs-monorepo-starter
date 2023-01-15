@@ -9,7 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev typed-scss:watch --parallel",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\" --ignore-path .gitignore",
+    "format": "prettier --write \"**/*.{ts,tsx,md,js}\" --ignore-path .gitignore",
     "lint": "turbo run lint",
     "test": "turbo run test"
   },
