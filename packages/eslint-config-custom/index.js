@@ -39,7 +39,7 @@ module.exports = {
       },
     },
     {
-      // Prevent ESLint from giving errors on JS config files
+      // Prevent ESLint from giving errors in JS config files https://github.com/vercel/next.js/issues/40687
       files: ['*.js'],
       parser: 'espree',
       parserOptions: {
