@@ -4,5 +4,6 @@
     "source.fixAll.stylelint": true
   },
   "stylelint.snippet": ["scss"],
-  "stylelint.validate": ["scss"]
+  "stylelint.validate": ["scss"],
+  "cSpell.words": ["Turborepo"]
 }

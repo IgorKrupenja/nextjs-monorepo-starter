@@ -2,6 +2,7 @@
 
 ## Features
 
+- Monorepo with Turborepo
 - Next.js
 - Typescript
 - Jest with React Testing Library
@@ -11,16 +12,9 @@
 
 ## How to Use
 
-Create a new project from the template:
+Create a new project from this template:
 
 ```bash
-npx create-next-app project-name --example https://github.com/igor-krupenja/next-starter
-```
-
-```bash
-yarn create next-app project-name --example https://github.com/igor-krupenja/next-starter
-```
-
-```bash
-pnpm create next-app project-name --example https://github.com/igor-krupenja/next-starter
+npx degit igor-krupenja/nextjs-turbo-starter nextjs-turbo-starter
+cd with-docker
 ```
