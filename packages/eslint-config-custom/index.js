@@ -11,8 +11,8 @@ module.exports = {
     'simple-import-sort/exports': 'error',
   },
   overrides: [
-    // Ignore various JS config files
     {
+      // Ignore various JS config files
       files: ['**/*.ts?(x)'],
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
