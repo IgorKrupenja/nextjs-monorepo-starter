@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "github.copilot",
+    "tlent.jest-snapshot-language-support",
+    "pulkitgangwar.nextjs-snippets",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "formulahendry.auto-rename-tag"
+  ]
+}
