@@ -1,12 +1,12 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
 exports[`renders homepage unchanged 1`] = `
 <div>
   <main
-    class="main"
+    class="_main_6cbb2f"
   >
     <h1
-      class="title"
+      class="_title_6cbb2f"
     >
       Welcome to 
       <a
@@ -16,7 +16,7 @@ exports[`renders homepage unchanged 1`] = `
       </a>
     </h1>
     <p
-      class="description"
+      class="_description_6cbb2f"
     >
       Get started by editing 
       <code>
@@ -24,7 +24,7 @@ exports[`renders homepage unchanged 1`] = `
       </code>
     </p>
     <button
-      class="button"
+      class="_button_f8fcb7"
     >
       Boom!
     </button>
