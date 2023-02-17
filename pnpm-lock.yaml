@@ -12,6 +12,61 @@ importers:
       prettier: 2.8.3
       turbo: 1.7.2
 
+  apps/landing-web:
+    specifiers:
+      '@babel/core': ^7.20.12
+      '@next/font': ^13.1.6
+      '@testing-library/react': ^13.4.0
+      '@types/node': ^18.11.18
+      '@types/react': 18.0.27
+      '@types/react-dom': ^18.0.10
+      '@vitejs/plugin-react': ^3.1.0
+      eslint: ^8.33.0
+      eslint-config-custom: workspace:*
+      eslint-plugin-testing-library: ^5.10.0
+      jsdom: ^21.1.0
+      next: ^13.1.6
+      normalize.css: ^8.0.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      sass: ^1.58.0
+      stylelint: ^14.16.1
+      stylelint-config-custom: workspace:*
+      tsconfig: workspace:*
+      typed-scss-modules: ^7.0.2
+      typescript: 4.9.5
+      ui: workspace:*
+      vite: ^4.1.1
+      vite-tsconfig-paths: ^4.0.5
+      vitest: ^0.28.3
+    dependencies:
+      '@next/font': 13.1.6
+      next: 13.1.6_fcop3xylqakmbilfhdeuva2xj4
+      normalize.css: 8.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      ui: link:../../packages/ui
+    devDependencies:
+      '@babel/core': 7.20.12
+      '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
+      '@types/node': 18.11.18
+      '@types/react': 18.0.27
+      '@types/react-dom': 18.0.10
+      '@vitejs/plugin-react': 3.1.0_vite@4.1.1
+      eslint: 8.33.0
+      eslint-config-custom: link:../../packages/eslint-config-custom
+      eslint-plugin-testing-library: 5.10.0_4vsywjlpuriuw3tl5oq6zy5a64
+      jsdom: 21.1.0
+      sass: 1.58.0
+      stylelint: 14.16.1
+      stylelint-config-custom: link:../../packages/stylelint-config-custom
+      tsconfig: link:../../packages/tsconfig
+      typed-scss-modules: 7.0.2_sass@1.58.0
+      typescript: 4.9.5
+      vite: 4.1.1_f5vcjb3akvjdur4ffzogu2hewu
+      vite-tsconfig-paths: 4.0.5_typescript@4.9.5
+      vitest: 0.28.3_jsdom@21.1.0+sass@1.58.0
+
   apps/web:
     specifiers:
       '@babel/core': ^7.20.12

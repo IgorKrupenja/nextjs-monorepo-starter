@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p>
-          This is <code>web</code> project.
+          This is <code>landing-web</code> project.
         </p>
 
         <p className={styles.description}>

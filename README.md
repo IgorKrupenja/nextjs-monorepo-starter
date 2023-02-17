@@ -1,20 +1,17 @@
-# Next.js starter
+# Kollekt front-end starter
 
-## Features
+## Inital setup
 
-- Monorepo with Turborepo
-- Next.js
-- Typescript
-- Jest with React Testing Library
-- SCSS with modules, including `typed-scss-modules` support
-- ESLint and Stylelint
-- Prettier
+1. Make sure you have Node v18 installed. You can install [directly](https://nodejs.org/en/download/) or use [nvm](https://github.com/nvm-sh/nvm).
+2. Install `pnpm` and `turborepo` globally: `npm install -g pnpm && pnpm install -g turbo`.
+3. Run `pnpm install` in the root directory to install all dependencies.
 
-## How to Use
+## Building Next.js projects
 
-Create a new project from this template:
+1. Run `pnpm build` in the root directory to build all Next.js projects.
 
-```bash
-npx degit igor-krupenja/nextjs-turbo-starter nextjs-turbo-starter
-cd nextjs-turbo-starter
-```
+This will build the two sample Next.js projects and put built outputs in the `apps/landing-web/.next` and `apps/web/.next` directories.
+
+## Next.js and Docker
+
+- Possibly useful link, has examples: <https://nextjs.org/docs/deployment#docker-image>

@@ -1,0 +1,33 @@
+// Vitest Snapshot v1
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="_main_6cbb2f"
+  >
+    <h1
+      class="_title_6cbb2f"
+    >
+      Welcome to 
+      <a
+        href="https://nextjs.org"
+      >
+        Next.js!
+      </a>
+    </h1>
+    <p
+      class="_description_6cbb2f"
+    >
+      Get started by editing 
+      <code>
+        pages/index.tsx
+      </code>
+    </p>
+    <button
+      class="_button_f8fcb7"
+    >
+      Boom!
+    </button>
+  </main>
+</div>
+`;
