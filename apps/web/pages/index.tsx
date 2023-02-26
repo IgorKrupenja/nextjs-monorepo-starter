@@ -4,12 +4,16 @@ import { useState } from 'react';
 import UAParser from 'ua-parser-js';
 import { Button } from 'ui';
 
-import { useMedia } from '../useMedia';
+import { useMediaQuery } from '../useMediaQuery';
 import styles from './index.module.scss';
+
+interface IndexPageProps {
+  isMobileUserAgent: boolean;
+}
 
 export default function Home({ isMobileUserAgent }: IndexPageProps) {
   const [num, setNum] = useState(13);
-  const isMobile = useMedia(isMobileUserAgent);
+  const isMobile = useMediaQuery(isMobileUserAgent);
 
   return (
     <>
@@ -40,18 +44,14 @@ export default function Home({ isMobileUserAgent }: IndexPageProps) {
   );
 }
 
-interface IndexPageProps {
-  isMobileUserAgent: boolean;
-}
-
 export function getServerSideProps({
   req,
 }: GetServerSidePropsContext): GetServerSidePropsResult<IndexPageProps> {
-  const ua = new UAParser(req.headers['user-agent']);
+  const userAgent = new UAParser(req.headers['user-agent']);
 
   return {
     props: {
-      isMobileUserAgent: ua.getDevice().type === 'mobile',
+      isMobileUserAgent: userAgent.getDevice().type === 'mobile',
     },
   };
 }
