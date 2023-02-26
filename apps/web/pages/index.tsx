@@ -48,10 +48,11 @@ export function getServerSideProps({
   req,
 }: GetServerSidePropsContext): GetServerSidePropsResult<IndexPageProps> {
   const userAgent = new UAParser(req.headers['user-agent']);
+  const deviceType = userAgent.getDevice().type;
 
   return {
     props: {
-      isMobileUserAgent: userAgent.getDevice().type === 'mobile',
+      isMobileUserAgent: deviceType === 'mobile' || deviceType === 'tablet',
     },
   };
 }
