@@ -36,7 +36,7 @@ export default function Home({ isMobileUserAgent }: IndexPageProps) {
           <h2>Number: {num}</h2>
         </div>
 
-        <p>{isMobile ? 'CLIENT' : 'SERVER'}</p>
+        <p>{isMobile ? 'mobile' : 'desktop'}</p>
 
         <Button />
       </main>
