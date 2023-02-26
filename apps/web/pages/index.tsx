@@ -1,14 +1,15 @@
-import { GetServerSideProps } from 'next';
+import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 import Head from 'next/head';
 import { useState } from 'react';
+import UAParser from 'ua-parser-js';
 import { Button } from 'ui';
 
 import { useMedia } from '../useMedia';
 import styles from './index.module.scss';
 
-export default function Home() {
+export default function Home({ isMobileUserAgent }: IndexPageProps) {
   const [num, setNum] = useState(13);
-  const red = useMedia();
+  const isMobile = useMedia(isMobileUserAgent);
 
   return (
     <>
@@ -31,7 +32,7 @@ export default function Home() {
           <h2>Number: {num}</h2>
         </div>
 
-        <p>{red ? 'CLIENT' : 'SERVER'}</p>
+        <p>{isMobile ? 'CLIENT' : 'SERVER'}</p>
 
         <Button />
       </main>
@@ -39,14 +40,18 @@ export default function Home() {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ req }) => {
-  // const queryClient = new QueryClient();
-  // const userAgent = req.headers['user-agent'];
-  // const isDesktop = !!userAgent && !Boolean(userAgent.match(MATCH_MOBILE_USER_AGENTS));
-  await Promise.resolve();
+interface IndexPageProps {
+  isMobileUserAgent: boolean;
+}
+
+export function getServerSideProps({
+  req,
+}: GetServerSidePropsContext): GetServerSidePropsResult<IndexPageProps> {
+  const ua = new UAParser(req.headers['user-agent']);
+
   return {
     props: {
-      isDesktopDeviceDetected: true,
+      isMobileUserAgent: ua.getDevice().type === 'mobile',
     },
   };
-};
+}

@@ -20,6 +20,7 @@ importers:
       '@types/node': ^18.11.18
       '@types/react': 18.0.27
       '@types/react-dom': ^18.0.10
+      '@types/ua-parser-js': ^0.7.36
       '@vitejs/plugin-react': ^3.1.0
       eslint: ^8.33.0
       eslint-config-custom: workspace:*
@@ -35,16 +36,19 @@ importers:
       tsconfig: workspace:*
       typed-scss-modules: ^7.0.2
       typescript: 4.9.5
+      ua-parser-js: ^1.0.33
       ui: workspace:*
       vite: ^4.1.1
       vite-tsconfig-paths: ^4.0.5
       vitest: ^0.28.3
     dependencies:
       '@next/font': 13.1.6
+      '@types/ua-parser-js': 0.7.36
       next: 13.1.6_fcop3xylqakmbilfhdeuva2xj4
       normalize.css: 8.0.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      ua-parser-js: 1.0.33
       ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.20.12
@@ -900,6 +904,10 @@ packages:
 
   /@types/semver/7.3.13:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
+
+  /@types/ua-parser-js/0.7.36:
+    resolution: {integrity: sha512-N1rW+njavs70y2cApeIw1vLMYXRwfBy+7trgavGuuTfOd7j1Yh7QTRc/yqsPl6ncokt72ZXuxEU0PiCp9bSwNQ==}
+    dev: false
 
   /@typescript-eslint/eslint-plugin/5.50.0_go4drrxstycfikanvu45pi4vgq:
     resolution: {integrity: sha512-vwksQWSFZiUhgq3Kv7o1Jcj0DUNylwnIlGvKvLLYsq8pAWha6/WCnXUeaSoNNha/K7QSf2+jvmkxggC1u3pIwQ==}
@@ -4612,6 +4620,10 @@ packages:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+
+  /ua-parser-js/1.0.33:
+    resolution: {integrity: sha512-RqshF7TPTE0XLYAqmjlu5cLLuGdKrNu9O1KLA/qp39QtbZwuzwv1dT46DZSopoUMsYgXpB3Cv8a03FI8b74oFQ==}
+    dev: false
 
   /ufo/1.0.1:
     resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
