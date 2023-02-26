@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { Button } from 'ui';
 
 import styles from './index.module.scss';
+import { useMedia } from './useMedia';
 
 export default function Home() {
   const [num, setNum] = useState(13);
+  const red = useMedia();
 
   return (
     <>
@@ -27,6 +29,8 @@ export default function Home() {
           <button onClick={() => setNum(num + 1)}>CLICK</button>
           <h2>Number: {num}</h2>
         </div>
+
+        <p>{red ? 'CLIENT' : 'SERVER'}</p>
 
         <Button />
       </main>
