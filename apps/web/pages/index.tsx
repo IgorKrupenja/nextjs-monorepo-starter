@@ -2,8 +2,8 @@ import Head from 'next/head';
 import { useState } from 'react';
 import { Button } from 'ui';
 
+import { useMedia } from '../useMedia';
 import styles from './index.module.scss';
-import { useMedia } from './useMedia';
 
 export default function Home() {
   const [num, setNum] = useState(13);
