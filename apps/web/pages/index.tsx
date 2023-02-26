@@ -1,3 +1,4 @@
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import { useState } from 'react';
 import { Button } from 'ui';
@@ -37,3 +38,15 @@ export default function Home() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+  // const queryClient = new QueryClient();
+  // const userAgent = req.headers['user-agent'];
+  // const isDesktop = !!userAgent && !Boolean(userAgent.match(MATCH_MOBILE_USER_AGENTS));
+  await Promise.resolve();
+  return {
+    props: {
+      isDesktopDeviceDetected: true,
+    },
+  };
+};
