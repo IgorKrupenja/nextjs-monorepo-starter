@@ -6,14 +6,14 @@ export function useMediaQuery(isMobileUserAgent: boolean): boolean {
 
   useEffect(() => {
     // On the client, use the media query API to determine if the user is on a mobile device
-    const changeSize = (event: MediaQueryListEvent) => setIsMobile(event.matches);
+    const handleSizeChange = (event: MediaQueryListEvent) => setIsMobile(event.matches);
 
     const mediaQueryList = window.matchMedia('(max-width: 1440px)');
-    mediaQueryList.addEventListener('change', changeSize);
+    mediaQueryList.addEventListener('change', handleSizeChange);
 
     setIsMobile(mediaQueryList.matches);
 
-    return () => mediaQueryList.removeEventListener('change', changeSize);
+    return () => mediaQueryList.removeEventListener('change', handleSizeChange);
   }, []);
 
   return isMobile;

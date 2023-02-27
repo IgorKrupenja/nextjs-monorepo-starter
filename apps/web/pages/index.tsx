@@ -1,7 +1,9 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import UAParser from 'ua-parser-js';
 
+import test from '../public/test.png';
 import { useMediaQuery } from '../useMediaQuery';
 import styles from './index.module.scss';
 
@@ -21,6 +23,7 @@ export default function Home({ isMobileUserAgent }: IndexPageProps) {
 
       <main className={styles.main}>
         <p>{isMobile ? 'mobile' : 'desktop'}</p>
+        <Image src={test} alt="blah"></Image>
       </main>
     </>
   );
