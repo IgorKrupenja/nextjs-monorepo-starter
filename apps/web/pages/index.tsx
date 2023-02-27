@@ -3,7 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import UAParser from 'ua-parser-js';
 
-import test from '../public/test.png';
+import test from '/public/test.jpg';
+
 import { useMediaQuery } from '../useMediaQuery';
 import styles from './index.module.scss';
 
