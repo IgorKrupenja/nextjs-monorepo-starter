@@ -4,5 +4,7 @@
     "source.fixAll.stylelint": true
   },
   "stylelint.snippet": ["scss"],
-  "stylelint.validate": ["scss"]
+  "stylelint.validate": ["scss"],
+  "stylelint.packageManager": "pnpm",
+  "scss.validate": false,
 }
