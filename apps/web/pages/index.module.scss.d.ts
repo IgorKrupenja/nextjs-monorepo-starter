@@ -1,3 +1,3 @@
-export const description: string;
-export const main: string;
-export const title: string;
+export declare const description: string;
+export declare const main: string;
+export declare const title: string;
