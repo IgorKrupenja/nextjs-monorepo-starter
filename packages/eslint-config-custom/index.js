@@ -6,7 +6,7 @@ module.exports = {
   plugins: ['prettier', 'simple-import-sort', 'testing-library', 'unused-imports'],
   rules: {
     'no-return-await': 'warn',
-    'prettier/prettier': 'error',
+    'prettier/prettier': ['warn', { singleQuote: true, trailingComma: 'es5', printWidth: 100 }],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
@@ -26,6 +26,8 @@ module.exports = {
         // Disabling the base rule as it can report incorrect errors
         'require-await': 'off',
         '@typescript-eslint/require-await': 'error',
+        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
         'unused-imports/no-unused-imports': 'error',
         'unused-imports/no-unused-vars': [
           'warn',
