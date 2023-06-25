@@ -18,5 +18,8 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "files.readonlyInclude": {
+    "**/node_modules/**": true
   }
 }
