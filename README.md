@@ -15,6 +15,6 @@
 Create a new project from this template:
 
 ```bash
-npx degit igor-krupenja/nextjs-turbo-starter nextjs-turbo-starter
+npx degit igor-krupenja/nextjs-monorepo-starter nextjs-monorepo-starter
 cd nextjs-turbo-starter
 ```
