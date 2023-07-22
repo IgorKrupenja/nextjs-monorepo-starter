@@ -23,11 +23,11 @@ corepack prepare pnpm@latest --activate
 
 ```bash
 npx degit IgorKrupenja/nextjs-monorepo-starter nextjs-monorepo-starter
-cd nextjs-monorepo-starter
 ```
 
 4. Install dependencies:
 
 ```bash
+cd nextjs-monorepo-starter
 pnpm install
 ```
