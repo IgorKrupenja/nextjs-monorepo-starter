@@ -22,7 +22,7 @@ corepack prepare pnpm@latest --activate
 3. Create a new project from this template:
 
 ```bash
-npx degit IgorKrupenja/nextjs-monorepo-starter nextjs-monorepo-starter
+pnpm dlx degit IgorKrupenja/nextjs-monorepo-starter nextjs-monorepo-starter
 ```
 
 4. Install dependencies:
