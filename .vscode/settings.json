@@ -1,5 +1,6 @@
 {
   "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
@@ -23,5 +24,6 @@
     "**/node_modules/**": true
   },
   "editor.linkedEditing": true,
-  "material-icon-theme.activeIconPack": "react"
+  "material-icon-theme.activeIconPack": "react",
+  "editor.rulers": [100]
 }
