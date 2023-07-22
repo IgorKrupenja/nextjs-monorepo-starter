@@ -13,7 +13,6 @@
     "typed-scss:watch": "typed-scss-modules '(pages|components)/**/*.scss' --watch"
   },
   "dependencies": {
-    "@next/font": "^13.4.7",
     "next": "^13.4.7",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
