@@ -5,10 +5,7 @@
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint *.ts*",
-    "stylelint": "stylelint '**/*.scss'",
-    "typed-scss": "typed-scss-modules '(pages|components)/**/*.scss' --watch",
-    "typed-scss:watch": "typed-scss-modules '(pages|components)/**/*.scss' --watch"
+    "lint": "eslint *.ts*"
   },
   "devDependencies": {
     "@types/react": "18.2.15",
@@ -16,11 +13,7 @@
     "eslint": "^8.45.0",
     "eslint-config-custom": "workspace:*",
     "react": "^18.2.0",
-    "sass": "^1.64.1",
-    "stylelint": "^15.10.2",
-    "stylelint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
-    "typed-scss-modules": "^7.1.1",
     "typescript": "5.1.6"
   }
 }
