@@ -13,7 +13,7 @@
 ## Setup
 
 1. Make sure you have Node 18 installed or use [nvm](https://github.com/nvm-sh/nvm).
-2. Install [pnpm](https://pnpm.io/installation):
+2. [Install pnpm](https://pnpm.io/installation):
 
 ```bash
 corepack prepare pnpm@latest --activate
