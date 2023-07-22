@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Button } from 'ui';
+import { Button } from 'shared';
 
 import styles from './index.module.scss';
 
