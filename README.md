@@ -12,14 +12,21 @@
 
 ## Setup
 
-1. Create a new project from this template:
+1. Make sure you have Node 18 installed or use [nvm](https://github.com/nvm-sh/nvm).
+2. Install [pnpm](https://pnpm.io/installation):
 
 ```bash
-npx degit igor-krupenja/nextjs-monorepo-starter nextjs-monorepo-starter
+corepack prepare pnpm@latest --activate
+```
+
+3. Create a new project from this template:
+
+```bash
+npx degit IgorKrupenja/nextjs-monorepo-starter nextjs-monorepo-starter
 cd nextjs-monorepo-starter
 ```
 
-2. Install dependencies:
+4. Install dependencies:
 
 ```bash
 pnpm install
